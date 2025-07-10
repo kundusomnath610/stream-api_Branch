@@ -43,8 +43,9 @@ public class StreamObject {
             System.out.println(e);
         });
 
-        // Using Collection Object With Stream API
-        
+        stream2.close();
+        emptyStream.close();
+
     }
 
 }
