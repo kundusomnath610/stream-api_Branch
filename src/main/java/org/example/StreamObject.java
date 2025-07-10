@@ -1,6 +1,7 @@
 package org.example;
 
 import java.util.Arrays;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 /*
@@ -33,6 +34,17 @@ public class StreamObject {
             System.out.println(e);
         });
 
+        // Using Builder to develop Stream API
+        Stream<Object> stream2 = Stream.builder().build();
+        
+        //Using Arrays method with Double, Long, int, float, 
+        IntStream intStream = Arrays.stream(new int[]{20, 10, 30, 25,19});
+        intStream.forEach(e -> {
+            System.out.println(e);
+        });
+
+        // Using Collection Object With Stream API
+        
     }
 
 }
