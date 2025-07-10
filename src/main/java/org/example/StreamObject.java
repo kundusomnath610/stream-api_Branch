@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.Arrays;
+import java.util.stream.Stream;
 
 /*
  * 
@@ -13,14 +15,23 @@ package org.example;
  * 1. ofNullable
  * 2. of
  * 3. empty
- * 4. build
+ * 4. Builder
  * All four are same to create to stream API
  */
 
 public class StreamObject {
     public static void main(String[] args) {
         
-        
+        // Blank
+        Stream<Object> emptyStream = Stream.empty();
+
+        // Array Object Collection to Stream API
+        String[] names = {"som", "ram", "shym", "jadhu"};
+
+        Stream<String> stream = Stream.of(names);
+        stream.forEach(e -> {
+            System.out.println(e);
+        });
 
     }
 
