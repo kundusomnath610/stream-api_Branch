@@ -24,6 +24,15 @@ public class Method {
         System.out.println(newNumber);
 
 
+        // Min Max using Stream API and Lambda
+
+        Integer minNumber = number.stream().max((x, y) -> x.compareTo(y))
+                                        .get();
+        System.out.println(minNumber);
+
+        Integer maxNumber = number.stream().min((x, y) -> x.compareTo(y))
+                                                            .get();
+        System.out.println(maxNumber);
         
                                     
 
